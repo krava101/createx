@@ -31,7 +31,9 @@
             </svg>
           </a>
           <ul class="header-nav-list">
-            <li><a href="" class="header-nav-links">About Us</a></li>
+            <li>
+              <a href="" class="header-nav-links">About Us</a>
+            </li>
             <li><a href="" class="header-nav-links">Services</a></li>
             <li><a href="" class="header-nav-links">Work</a></li>
             <li><a href="" class="header-nav-links">News</a></li>
@@ -211,7 +213,7 @@
                   ></textarea>
                 </li>
               </ul>
-              <button type="button" class="question-btn">Send</button>
+              <button type="button" class="form-btn">Send</button>
             </form>
           </div>
         </div>
@@ -226,34 +228,44 @@
           </p>
           <ul class="services-list">
             <li class="first-services-card services-card">
-              <svg class="services-icons">
-                <use
-                  href="./img/home-page-img/home-icons.svg#icon-construction"
-                ></use>
-              </svg>
-              <h5 class="card-title">Construction</h5>
+              <div class="services-card-info">
+                <svg class="services-icons">
+                  <use
+                    href="./img/home-page-img/home-icons.svg#icon-construction"
+                  ></use>
+                </svg>
+                <h5 class="card-title">Construction</h5>
+              </div>
             </li>
             <li class="second-services-card services-card">
-              <svg class="services-icons">
-                <use href="./img/home-page-img/home-icons.svg#icon-plan"></use>
-              </svg>
-              <h5 class="card-title">Project Development</h5>
+              <div class="services-card-info">
+                <svg class="services-icons">
+                  <use
+                    href="./img/home-page-img/home-icons.svg#icon-plan"
+                  ></use>
+                </svg>
+                <h5 class="card-title">Project Development</h5>
+              </div>
             </li>
             <li class="third-services-card services-card">
-              <svg class="services-icons">
-                <use
-                  href="./img/home-page-img/home-icons.svg#icon-pantone"
-                ></use>
-              </svg>
-              <h5 class="card-title">Interior Design</h5>
+              <div class="services-card-info">
+                <svg class="services-icons">
+                  <use
+                    href="./img/home-page-img/home-icons.svg#icon-pantone"
+                  ></use>
+                </svg>
+                <h5 class="card-title">Interior Design</h5>
+              </div>
             </li>
             <li class="fourth-services-card services-card">
-              <svg class="services-icons">
-                <use
-                  href="./img/home-page-img/home-icons.svg#icon-painting"
-                ></use>
-              </svg>
-              <h5 class="card-title">Repairs</h5>
+              <div class="services-card-info">
+                <svg class="services-icons">
+                  <use
+                    href="./img/home-page-img/home-icons.svg#icon-painting"
+                  ></use>
+                </svg>
+                <h5 class="card-title">Repairs</h5>
+              </div>
             </li>
           </ul>
           <div class="services-info">
@@ -425,16 +437,20 @@
             <p class="reviews-nickname">Shawn Edwards</p>
             <p class="reviews-position">Position, Company name</p>
             <div class="reviews-slider">
-              <svg class="reviews-slider-icons">
-                <use
-                  href="./img/home-page-img/home-icons.svg#icon-left-arrow"
-                ></use>
-              </svg>
-              <svg class="reviews-slider-icons">
-                <use
-                  href="./img/home-page-img/home-icons.svg#icon-right-arrow"
-                ></use>
-              </svg>
+              <button type="button" class="reviews-slider-btn">
+                <svg class="reviews-slider-icons">
+                  <use
+                    href="./img/home-page-img/home-icons.svg#icon-left-arrow"
+                  ></use>
+                </svg>
+              </button>
+              <button type="button" class="reviews-slider-btn">
+                <svg class="reviews-slider-icons">
+                  <use
+                    href="./img/home-page-img/home-icons.svg#icon-right-arrow"
+                  ></use>
+                </svg>
+              </button>
             </div>
           </div>
           <img
@@ -507,9 +523,9 @@
                   alt="A solar panel"
                 />
                 <div class="main-news-content">
-                  <h5 class="main-news-card-title card-title">
+                  <a href="" class="main-news-card-title card-title">
                     How to Build Climate Change-Resilient Infrastructure
-                  </h5>
+                  </a>
                   <ul class="news-date-list">
                     <li>Industry News</li>
                     <li class="news-date-decor-item"></li>
@@ -538,7 +554,9 @@
                     alt="A construction helmet"
                   />
                   <div class="other-news-content">
-                    <h5 class="card-title">How Construction Can Help Itself</h5>
+                    <a href="" class="card-title"
+                      >How Construction Can Help Itself</a
+                    >
                     <ul class="news-date-list">
                       <li>Innovation</li>
                       <li class="news-date-decor-item"></li>
@@ -562,7 +580,9 @@
                     style="display: block"
                   />
                   <div class="other-news-content">
-                    <h5 class="card-title">Types of Flooring Materials</h5>
+                    <a href="" class="card-title"
+                      >Types of Flooring Materials</a
+                    >
                     <ul class="news-date-list">
                       <li>Company News</li>
                       <li class="news-date-decor-item"></li>
@@ -589,6 +609,54 @@
         </div>
       </section>
       <!-- FORM SECTION -->
+      <section class="application">
+        <div class="container">
+          <form class="application-form">
+            <h3 class="form-title">A quick way to discuss details</h3>
+            <ul class="app-form-list">
+              <li>
+                <label>Name*</label>
+                <input type="text" placeholder="Your name" class="app-input" />
+              </li>
+              <li>
+                <label>Phone*</label>
+                <input
+                  type="tel"
+                  placeholder="Your phone number"
+                  class="app-input"
+                />
+              </li>
+              <li>
+                <label>Email</label>
+                <input
+                  type="email"
+                  placeholder="Your working email"
+                  class="app-input"
+                />
+              </li>
+              <li>
+                <label>Message*</label>
+                <textarea
+                  name="dwd"
+                  id=""
+                  cols="1"
+                  rows="1"
+                  placeholder="Your message"
+                  class="app-textarea"
+                ></textarea>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" class="app-checkbox" />
+                <label class="checkbox-label">
+                  I agree to receive communications from Createx Construction
+                  Bureau.
+                </label>
+              </li>
+            </ul>
+            <button type="button" class="form-btn">send request</button>
+          </form>
+        </div>
+      </section>
       <!-- FORM SECTION -->
     </main>
     <!-- FOOTER -->
@@ -606,7 +674,7 @@
               </a>
               <ul class="footer-logo-list">
                 <li>
-                  <a href="">
+                  <a href="" class="footer-sm-link">
                     <svg class="footer-sm-icon">
                       <use
                         href="./img/home-page-img/home-icons.svg#icon-whatsapp"
@@ -615,7 +683,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="" class="footer-sm-link">
                     <svg class="footer-sm-icon">
                       <use
                         href="./img/home-page-img/home-icons.svg#icon-messanger"
@@ -624,7 +692,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="" class="footer-sm-link">
                     <svg class="footer-sm-icon">
                       <use
                         href="./img/home-page-img/home-icons.svg#icon-facebook"
@@ -633,7 +701,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="" class="footer-sm-link">
                     <svg class="footer-sm-icon">
                       <use
                         href="./img/home-page-img/home-icons.svg#icon-twitter"
@@ -642,7 +710,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="" class="footer-sm-link">
                     <svg class="footer-sm-icon">
                       <use
                         href="./img/home-page-img/home-icons.svg#icon-youtube"
