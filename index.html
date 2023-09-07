@@ -184,36 +184,34 @@
               Want to know more? Ask us a question:
             </h3>
             <form action="" class="question-form">
-              <ul class="question-list">
-                <li class="question-card">
-                  <p>Name</p>
-                  <input
-                    type="text"
-                    placeholder="Your name"
-                    class="question-input"
-                  />
-                </li>
-                <li class="question-card">
-                  <p>Phone</p>
-                  <input
-                    type="tel"
-                    placeholder="Your phone"
-                    class="question-input"
-                  />
-                </li>
-                <li class="question-card">
-                  <p>Message</p>
-                  <textarea
-                    name=""
-                    id=""
-                    cols="1"
-                    rows="1"
-                    placeholder="Your message"
-                    class="question-textarea"
-                  ></textarea>
-                </li>
-              </ul>
-              <button type="button" class="form-btn">Send</button>
+              <label class="question-label">
+                Name
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="question-input"
+                />
+              </label>
+              <label class="question-label">
+                Phone
+                <input
+                  type="tel"
+                  placeholder="Your phone"
+                  class="question-input"
+                />
+              </label>
+              <label class="question-label">
+                Message
+                <textarea
+                  name=""
+                  id=""
+                  cols="1"
+                  rows="1"
+                  placeholder="Your message"
+                  class="question-textarea"
+                ></textarea>
+              </label>
+              <button type="submit" class="form-btn">Send</button>
             </form>
           </div>
         </div>
@@ -613,47 +611,48 @@
         <div class="container">
           <form class="application-form">
             <h3 class="form-title">A quick way to discuss details</h3>
-            <ul class="app-form-list">
-              <li>
-                <label>Name*</label>
-                <input type="text" placeholder="Your name" class="app-input" />
-              </li>
-              <li>
-                <label>Phone*</label>
-                <input
-                  type="tel"
-                  placeholder="Your phone number"
-                  class="app-input"
-                />
-              </li>
-              <li>
-                <label>Email</label>
-                <input
-                  type="email"
-                  placeholder="Your working email"
-                  class="app-input"
-                />
-              </li>
-              <li>
-                <label>Message*</label>
-                <textarea
-                  name="dwd"
-                  id=""
-                  cols="1"
-                  rows="1"
-                  placeholder="Your message"
-                  class="app-textarea"
-                ></textarea>
-              </li>
-              <li class="checkbox-item">
-                <input type="checkbox" class="app-checkbox" />
-                <label class="checkbox-label">
-                  I agree to receive communications from Createx Construction
-                  Bureau.
-                </label>
-              </li>
-            </ul>
-            <button type="button" class="form-btn">send request</button>
+            <label class="app-label">
+              Name*
+              <input type="text" placeholder="Your name" class="app-input"  name="user_name"/>
+            </label>
+            <label class="app-label">Phone*
+              <input
+                type="tel"
+                placeholder="Your phone number"
+                class="app-input"
+                name="user_tel"
+              />
+            </label>
+            <label class="app-label">Email
+              <input
+                type="email"
+                placeholder="Your working email"
+                class="app-input"
+                name="user_email"
+              />
+            </label>
+            <label class="app-label">Message*
+              <textarea
+                name="dwd"
+                id=""
+                cols="1"
+                rows="1"
+                placeholder="Your message"
+                name="user_message"
+                class="app-textarea"></textarea>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" class="app-checkbox" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="decor-checkbox">
+                <rect x="0.5" y="0.5" width="15" height="15" rx="2.5" fill="#FF5A30" stroke="#FF5A30" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.8277 4.19526C13.0574 4.45561 13.0574 4.87772 12.8277 5.13807L6.94536 11.8047C6.71564 12.0651 6.34319 12.0651 6.11347 11.8047L3.17229 8.4714C2.94257 8.21105 2.94257 7.78894 3.17229 7.5286C3.40201 7.26825 3.77446 7.26825 4.00418 7.5286L6.52941 10.3905L11.9958 4.19526C12.2255 3.93491 12.598 3.93491 12.8277 4.19526Z"
+                  fill="white" />
+              </svg>
+              I agree to receive communications from Createx Construction
+              Bureau.
+            </label>
+            <button type="submit" class="app-btn">send request</button>
           </form>
         </div>
       </section>
@@ -734,8 +733,9 @@
                 type="email"
                 placeholder="Your email address"
                 class="footer-input"
+                name="user_email"
               />
-              <button type="button" class="footer-input-btn">subscribe</button>
+              <button type="submit" class="footer-input-btn">subscribe</button>
             </div>
             <p class="footer-email-text">
               *Subscribe to our newsletter to receive communications and early
