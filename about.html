@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CreateX</title>
     <link
@@ -17,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
     <header>
@@ -32,7 +33,9 @@
           </a>
           <ul class="header-nav-list">
             <li>
-              <a href="./about.html" class="header-nav-links">About Us</a>
+              <a href="./about.html" class="header-nav-links active-nav-link"
+                >About Us</a
+              >
             </li>
             <li><a href="" class="header-nav-links">Services</a></li>
             <li><a href="" class="header-nav-links">Work</a></li>
@@ -71,69 +74,66 @@
       </div>
     </header>
     <main>
-      <!-- HERO SECTION -->
+      <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <h1 class="page-title">
-            create<span class="page-title-part">x</span> construction
-          </h1>
+          <p class="page-path"><span class="page-path-dark">Homepage</span> / About Us</p>
+          <h1 class="page-title">about us</h1>
           <p class="hero-text">
-            Cras ultrices leo vitae non viverra. Fringilla nisi quisque
-            consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis
-            purus eget pellentesque integer ipsum elementum felis.
+            Createx Construction Bureau has been successfully operating in the
+            USA construction market since 2000. We are proud to offer you
+            quality construction and exemplary service.
           </p>
-          <div class="hero-buttons">
-            <a href="" class="hero-link">learn more about us</a>
-            <button type="button" class="hero-btn">submit request</button>
-          </div>
-          <ul class="hero-list">
-            <li class="hero-list-item active">
-              <p>01</p>
-              <hr class="hero-item-hr" />
+        </div>
+      </section>
+      <!-- HERO -->
+      <!-- FACTS -->
+      <section class="facts">
+        <div class="container">
+          <ul class="facts-list">
+            <li class="facts-list-item">
+              <h2 class="section-title">60%</h2>
+              <p class="facts-item-text">
+                Clients on the recommendation of friends
+              </p>
             </li>
-            <li class="hero-list-item">
-              <p>02</p>
-              <hr class="hero-item-hr" />
+            <li class="facts-list-item">
+              <h2 class="section-title">2400+</h2>
+              <p class="facts-item-text">Apartments renovated</p>
             </li>
-            <li class="hero-list-item">
-              <p>03</p>
-              <hr class="hero-item-hr" />
+            <li class="facts-list-item">
+              <h2 class="section-title">670</h2>
+              <p class="facts-item-text">Qualified specialists</p>
             </li>
-            <li class="hero-list-item">
-              <p>04</p>
-              <hr class="hero-item-hr" />
+            <li class="facts-list-item">
+              <h2 class="section-title">150000+m&#178;</h2>
+              <p class="facts-item-text">Finishing work was carried out</p>
             </li>
           </ul>
         </div>
       </section>
-      <!-- WE ARE SECTION -->
-      <section class="we-are">
+      <!-- FACTS -->
+      <!-- COMMENT -->
+      <section class="comment">
         <div class="container">
-          <h2 class="we-are-title section-title">
-            We are Createx Construction Bureau
-          </h2>
-          <p class="section-text">
-            We are rightfully considered to be the best construction company in
-            the USA.
-          </p>
-          <div class="we-are-video">
-            <svg class="icon-play-video">
-              <use
-                href="./img/home-page-img/home-icons.svg#icon-play-video"
-              ></use>
-            </svg>
-            <span class="icon-volum-off-box">
-              <svg class="icon-volum-off">
-                <use
-                  href="./img/home-page-img/home-icons.svg#icon-volum-off"
-                  class="icon-volum-off-m"
-                ></use>
-              </svg>
-            </span>
+          <div class="ceo-comment">
+            <p class="comment-text">
+              Dapibus nec vitae ante mattis. Aliquam phasellus ac dui augue in.
+              Sed aliquet in egestas hac at proin sed quam. Etiam aliquet
+              sagittis non, massa cum pulvinar. Et in leo, tempus purus
+              vestibulum ut blandit et mi. Odio massa purus vel praesent arcu
+              enim elit felis viverra. Magna aliquam interdum mattis ipsum arcu.
+              Elit odio elit viverra quis metus amet eleifend amet. Vet
+              suspendisse faucibus tempor ipsum integer.
+            </p>
+            <p class="comment-nickname">Shawn Edwards</p>
+            <p class="comment-position">Position, Company name</p>
           </div>
+          <img src="" alt="" class="comment-img" />
         </div>
       </section>
-      <!-- OUR CORE SECTION-->
+      <!-- COMMENT -->
+      <!-- OUR CORE -->
       <section class="our-core">
         <div class="container">
           <h2 class="our-core-title section-title">Our core values</h2>
@@ -177,159 +177,127 @@
             </li>
           </ul>
         </div>
-        <!-- ASK A QUESTION -->
-        <div class="container">
-          <div class="question">
-            <h3 class="question-title view-more-title">
-              Want to know more? Ask us a question:
-            </h3>
-            <form action="" class="question-form">
-              <label class="question-label">
-                Name
-                <input
-                  type="text"
-                  placeholder="Your name"
-                  class="question-input"
-                />
-              </label>
-              <label class="question-label">
-                Phone
-                <input
-                  type="tel"
-                  placeholder="Your phone"
-                  class="question-input"
-                />
-              </label>
-              <label class="question-label">
-                Message
-                <textarea
-                  name=""
-                  id=""
-                  cols="1"
-                  rows="1"
-                  placeholder="Your message"
-                  class="question-textarea"
-                ></textarea>
-              </label>
-              <button type="submit" class="form-btn">Send</button>
-            </form>
-          </div>
-        </div>
       </section>
-      <!-- OUR SERVICES SECTION-->
-      <section class="services">
+      <!-- OUR CORE -->
+      <!-- OUR HISTORY -->
+      <section class="history">
         <div class="container">
-          <h2 class="services-title section-title">Our services</h2>
-          <p class="section-text">
-            Createx Construction Bureau is a construction giant with a full
-            range of construction services.
-          </p>
-          <ul class="services-list">
-            <li class="first-services-card services-card">
-              <div class="services-card-info">
-                <svg class="services-icons">
-                  <use
-                    href="./img/home-page-img/home-icons.svg#icon-construction"
-                  ></use>
-                </svg>
-                <h5 class="card-title">Construction</h5>
-              </div>
-            </li>
-            <li class="second-services-card services-card">
-              <div class="services-card-info">
-                <svg class="services-icons">
-                  <use
-                    href="./img/home-page-img/home-icons.svg#icon-plan"
-                  ></use>
-                </svg>
-                <h5 class="card-title">Project Development</h5>
-              </div>
-            </li>
-            <li class="third-services-card services-card">
-              <div class="services-card-info">
-                <svg class="services-icons">
-                  <use
-                    href="./img/home-page-img/home-icons.svg#icon-pantone"
-                  ></use>
-                </svg>
-                <h5 class="card-title">Interior Design</h5>
-              </div>
-            </li>
-            <li class="fourth-services-card services-card">
-              <div class="services-card-info">
-                <svg class="services-icons">
-                  <use
-                    href="./img/home-page-img/home-icons.svg#icon-painting"
-                  ></use>
-                </svg>
-                <h5 class="card-title">Repairs</h5>
-              </div>
-            </li>
-          </ul>
-          <div class="services-info">
-            <h3 class="view-more-title">Learn more about our services</h3>
-            <a href="" class="services-link view-more-link">View services</a>
-          </div>
-        </div>
-      </section>
-      <!-- OUR PROJETCS SECTION -->
-      <section class="projects">
-        <div class="container">
-          <div class="projects-title-container">
-            <h2 class="projects-title section-title">
-              Browse our selected projects and learn more about our work
-            </h2>
-            <div class="p-slider-controls">
-              <button type="button" class="p-left-arrow-btn">
-                <svg class="p-left-arrow p-arrow">
-                  <use
-                    href="./img/home-page-img/home-icons.svg#icon-left-arrow"
-                  ></use>
-                </svg>
-              </button>
-              <button type="button" class="p-right-arrow-btn">
-                <svg class="p-right-arrow p-arrow">
-                  <use
-                    href="./img/home-page-img/home-icons.svg#icon-right-arrow"
-                  ></use>
-                </svg>
-              </button>
+          <h2 class="section-title">Our history</h2>
+          <div class="history-nav">
+            <ul class="history-list">
+              <li class="history-list-item active-history-item">Present</li>
+              <li class="history-list-item">March 2019</li>
+              <li class="history-list-item">November 2018</li>
+              <li class="history-list-item">July 2015</li>
+              <li class="history-list-item">August 2010</li>
+              <li class="history-list-item">February 2007</li>
+              <li class="history-list-item">May 2004</li>
+              <li class="history-list-item">October 2001</li>
+              <li class="history-list-item">June 2000</li>
+            </ul>
+            <div class="active-history-card">
+              <img src="" alt="Construction" class="active-history-img" />
+              <p class="history-text">
+                Bcelerisque dapibus pharetra nibh semper iaculis duis viverra
+                porttitor in. Eu nec vitae, malesuada vitae egestas integer et
+                morbi. Maecenas sed quis diam posuere malesuada magnis.
+                Bcelerisque dapibus. Eu nec vitae
+              </p>
             </div>
           </div>
-          <ul class="projects-list">
-            <li class="first-project projects-card">
-              <div class="projects-card-info">
-                <h5 class="card-title">Red Finger Building</h5>
-                <p class="projects-card-text">Business Centers</p>
-                <a href="" class="projects-card-link">view project</a>
-              </div>
-            </li>
-            <li class="second-project projects-card">
-              <div class="projects-card-info">
-                <h5 class="card-title">Cubes Building</h5>
-                <p class="projects-card-text">Business Centers</p>
-                <a href="" class="projects-card-link">view project</a>
-              </div>
-            </li>
-            <li class="third-project projects-card">
-              <div class="projects-card-info">
-                <h5 class="card-title">The Pencil Building</h5>
-                <p class="projects-card-text">Stores & Malls</p>
-                <a href="" class="projects-card-link">view project</a>
-              </div>
-            </li>
-          </ul>
-          <div class="projects-info">
-            <h3 class="view-more-title">Explore all our works</h3>
-            <a href="" class="portfolio-link view-more-link">View portfolio</a>
-          </div>
         </div>
       </section>
-      <!-- PARTNERS SECTION -->
+      <!-- OUR HISTORY -->
+      <!-- PARTNERS -->
       <section class="partners">
         <div class="container">
           <h2 class="section-title">Supported by 12+ partners</h2>
+          <p class="section-text">We are supported by 12+ industry bodies and media partners</p>
           <ul class="partners-list">
+            <li class="partners-item">
+              <a href="" class="partners-link">
+                <img
+                  src="./img/partners-img/indepth.svg"
+                  alt="InDepth Consulting logo"
+                  class="partners-icon"
+                />
+                <img
+                  src="./img/partners-img/indepth-dark.svg"
+                  alt="InDepth Consulting logo"
+                  class="partners-icon-dark"
+                />
+              </a>
+            </li>
+            <li class="partners-item">
+              <a href="" class="partners-link">
+                <img
+                  src="./img/partners-img/higher-fit.svg"
+                  alt="Higher Fit logo"
+                  class="partners-icon"
+                />
+                <img
+                  src="./img/partners-img/higher-fit-dark.svg"
+                  alt="Higher Fit logo"
+                  class="partners-icon-dark"
+                />
+              </a>
+            </li>
+            <li class="partners-item">
+              <a href="" class="partners-link">
+                <img
+                  src="./img/partners-img/sentinal.svg"
+                  alt="Sentinal Consulting logo"
+                  class="partners-icon"
+                />
+                <img
+                  src="./img/partners-img/sentinal-dark.svg"
+                  alt="Sentinal Consulting logo"
+                  class="partners-icon-dark"
+                />
+              </a>
+            </li>
+            <li class="partners-item">
+              <a href="" class="partners-link">
+                <img
+                  src="./img/partners-img/happy-home.svg"
+                  alt="Happy Home logo"
+                  class="partners-icon"
+                />
+                <img
+                  src="./img/partners-img/happy-home-dark.svg"
+                  alt="Happy Home logo"
+                  class="partners-icon-dark"
+                />
+              </a>
+            </li>
+            <li class="partners-item">
+              <a href="" class="partners-link">
+                <img
+                  src="./img/partners-img/for-sale.svg"
+                  alt="ForSale logo"
+                  class="partners-icon"
+                />
+                <img
+                  src="./img/partners-img/for-sale-dark.svg"
+                  alt="ForSale logo"
+                  class="partners-icon-dark"
+                />
+              </a>
+            </li>
+            <li class="partners-item">
+              <a href="" class="partners-link">
+                <img
+                  src="./img/partners-img/sunset-realty.svg"
+                  alt="Sunset Realty logo"
+                  class="partners-icon"
+                />
+                <img
+                  src="./img/partners-img/sunset-realty-dark.svg"
+                  alt="Sunset Realty logo"
+                  class="partners-icon-dark"
+                />
+              </a>
+            </li>
             <li class="partners-item">
               <a href="" class="partners-link">
                 <img
@@ -417,196 +385,66 @@
           </ul>
         </div>
       </section>
-      <!--REVIEWS SECTION  -->
-      <section class="reviews">
+      <!-- PARTNERS -->
+      <!-- OUR TEAM -->
+      <section class="team">
         <div class="container">
-          <div class="reviews-info">
-            <h2 class="section-title">What our clients are saying</h2>
-            <img
-              src="./img/home-page-img/reviews-avatar.jpg"
-              alt="Client's avatar"
-              class="reviews-avatar"
-            />
-            <p class="reviews-text">
-              Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum
-              eiusmod enim. Consectetur magna cillum consequat minim laboris
-              cillum laboris voluptate minim proident exercitation ullamco.
-            </p>
-            <p class="reviews-nickname">Shawn Edwards</p>
-            <p class="reviews-position">Position, Company name</p>
-            <div class="reviews-slider">
-              <button type="button" class="reviews-slider-btn">
-                <svg class="reviews-slider-icons">
-                  <use
-                    href="./img/home-page-img/home-icons.svg#icon-left-arrow"
-                  ></use>
-                </svg>
-              </button>
-              <button type="button" class="reviews-slider-btn">
-                <svg class="reviews-slider-icons">
-                  <use
-                    href="./img/home-page-img/home-icons.svg#icon-right-arrow"
-                  ></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <img
-            src="./img/home-page-img/reviews.jpg"
-            alt="Worker and client"
-            class="reviews-img"
-          />
+          <h2 class="section-title">Our team</h2>
+          <p class="section-text">People are at the heart of Createx Construction Bureau</p>
+          <ul class="team-list">
+            <li class="team-list-item">
+              <img src="" alt="CEO, Co-Founder photo" />
+              <h5 class="card-title">Courtney Alexander</h5>
+              <p class="team-position">CEO, Co-Founder</p>
+            </li>
+            <li class="team-list-item">
+              <img src="" alt="CTO, Co-Founder photo" />
+              <h5 class="card-title">Calvin Fox</h5>
+              <p class="team-position">CTO, Co-Founder</p>
+            </li>
+            <li class="team-list-item">
+              <img src="" alt="Commercial Manager photo" />
+              <h5 class="card-title">Johnny Lane</h5>
+              <p class="team-position">Commercial Manager</p>
+            </li>
+            <li class="team-list-item">
+              <img src="" alt="Director of Human Resources photo" />
+              <h5 class="card-title">Diane Mccoy</h5>
+              <p class="team-position">Director of Human Resources</p>
+            </li>
+            <li class="team-list-item">
+              <img src="" alt="Lead Accountant photo" />
+              <h5 class="card-title">Judith Warren</h5>
+              <p class="team-position">Lead Accountant</p>
+            </li>
+            <li class="team-list-item">
+              <img src="" alt="Finacial Director photo" />
+              <h5 class="card-title">Floyd Simmmons</h5>
+              <p class="team-position">Finacial Director</p>
+            </li>
+            <li class="team-list-item">
+              <img src="" alt="Director of Marketing photo" />
+              <h5 class="card-title">Serenity Edwards</h5>
+              <p class="team-position">Director of Marketing</p>
+            </li>
+            <li class="team-list-item">
+              <img src="" alt="Tech Lead photo" />
+              <h5 class="card-title">Shawn Edwards</h5>
+              <p class="team-position">Tech Lead</p>
+            </li>
+          </ul>
+          <p class="section-text team-text">Become a part of the best team in the construction market of the USA. <a href="" class="team-link"> Available Positions</a></p>
         </div>
       </section>
-      <!-- FACTS AND NEWS SECTION -->
-      <section class="facts-news">
+      <!-- OUR TEAM -->
+      <!-- MAP -->
+      <section class="map">
         <div class="container">
-          <!-- FACTS -->
-          <div class="facts">
-            <h2 class="section-title">Some facts and figures</h2>
-            <ul class="facts-list">
-              <li class="facts-card">
-                <div class="circle-progress">
-                  <svg class="progress-icon">
-                    <use
-                      href="./img/home-page-img/home-icons.svg#icon-circle-progress-orange"
-                    ></use>
-                  </svg>
-                  <p class="circle-progress-info">98%</p>
-                </div>
-                <p class="facts-card-text">Totally satisfied clients</p>
-              </li>
-              <li class="facts-card">
-                <div class="circle-progress">
-                  <svg class="progress-icon">
-                    <use
-                      href="./img/home-page-img/home-icons.svg#icon-circle-progress-pink"
-                    ></use>
-                  </svg>
-                  <p class="circle-progress-info">20</p>
-                </div>
-                <p class="facts-card-text">Years of experience</p>
-              </li>
-              <li class="facts-card">
-                <div class="circle-progress">
-                  <svg class="progress-icon">
-                    <use
-                      href="./img/home-page-img/home-icons.svg#icon-circle-progress-blue"
-                    ></use>
-                  </svg>
-                  <p class="circle-progress-info">9452</p>
-                </div>
-                <p class="facts-card-text">Working hours spent</p>
-              </li>
-              <li class="facts-card">
-                <div class="circle-progress">
-                  <svg class="progress-icon">
-                    <use
-                      href="./img/home-page-img/home-icons.svg#icon-circle-progress-green"
-                    ></use>
-                  </svg>
-                  <p class="circle-progress-info">100%</p>
-                </div>
-                <p class="facts-card-text">Succeeded projects</p>
-              </li>
-            </ul>
-          </div>
-          <!-- NEWS -->
-          <div class="news">
-            <h2 class="section-title">Recent news</h2>
-            <div class="news-page">
-              <div class="main-news">
-                <img
-                  src="./img/home-page-img/main-news.jpg"
-                  alt="A solar panel"
-                />
-                <div class="main-news-content">
-                  <a href="" class="main-news-card-title card-title">
-                    How to Build Climate Change-Resilient Infrastructure
-                  </a>
-                  <ul class="news-date-list">
-                    <li>Industry News</li>
-                    <li class="news-date-decor-item"></li>
-                    <li>June 24, 2020</li>
-                    <li class="news-date-decor-item"></li>
-                    <li class="news-comments">
-                      <svg class="news-comment-icon">
-                        <use
-                          href="./img/home-page-img/home-icons.svg#icon-comments"
-                        ></use>
-                      </svg>
-                      4 comments
-                    </li>
-                  </ul>
-                  <p class="main-news-text">
-                    Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
-                    faucibus. Tincidunt aliquet sit vel, venenatis nulla.
-                    Integer bibendum turpis convallis enim, nibh convallis...
-                  </p>
-                </div>
-              </div>
-              <ul class="other-news-list">
-                <li class="other-news-card">
-                  <img
-                    src="./img/home-page-img/first-other-news.jpg"
-                    alt="A construction helmet"
-                  />
-                  <div class="other-news-content">
-                    <a href="" class="card-title"
-                      >How Construction Can Help Itself</a
-                    >
-                    <ul class="news-date-list">
-                      <li>Innovation</li>
-                      <li class="news-date-decor-item"></li>
-                      <li>June 12, 2020</li>
-                      <li class="news-date-decor-item"></li>
-                      <li class="news-comments">
-                        <svg class="news-comment-icon">
-                          <use
-                            href="./img/home-page-img/home-icons.svg#icon-comments"
-                          ></use>
-                        </svg>
-                        No comments
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="other-news-card">
-                  <img
-                    src="./img/home-page-img/second-other-news.jpg"
-                    alt="Flooring materials"
-                    style="display: block"
-                  />
-                  <div class="other-news-content">
-                    <a href="" class="card-title"
-                      >Types of Flooring Materials</a
-                    >
-                    <ul class="news-date-list">
-                      <li>Company News</li>
-                      <li class="news-date-decor-item"></li>
-                      <li>December 1, 2019</li>
-                      <li class="news-date-decor-item"></li>
-                      <li class="news-comments">
-                        <svg class="news-comment-icon">
-                          <use
-                            href="./img/home-page-img/home-icons.svg#icon-comments"
-                          ></use>
-                        </svg>
-                        No comments
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="news-info">
-              <h3 class="view-more-title">Explore all our news posts</h3>
-              <a href="" class="news-link view-more-link">view all news</a>
-            </div>
-          </div>
+          <h2 class="section-title">We work worldwide</h2>
         </div>
       </section>
-      <!-- FORM SECTION -->
+      <!-- MAP -->
+      <!-- APPLICATION -->
       <section class="application">
         <div class="container">
           <form class="application-form">
@@ -656,7 +494,7 @@
           </form>
         </div>
       </section>
-      <!-- FORM SECTION -->
+      <!-- APPLICATION -->
     </main>
     <!-- FOOTER -->
     <footer>
@@ -790,7 +628,7 @@
             </svg>
             by Createx Studio
           </p>
-          <a href="index.html" class="to-top-link">
+          <a href="about.html" class="to-top-link">
             go to top
             <span class="to-top-btn">
               <svg class="to-top-icon">
