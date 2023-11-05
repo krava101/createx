@@ -17,20 +17,21 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container">
         <nav class="header-nav">
-          <a href="index.html">
+          <a href="main.html">
             <svg class="logo">
               <use
                 href="./img/home-page-img/home-icons.svg#icon-logo-black"
               ></use>
             </svg>
           </a>
-          <ul class="header-nav-list">
+          <ul class="header-nav-list list">
             <li>
               <a href="./about.html" class="header-nav-links">About Us</a>
             </li>
@@ -41,7 +42,7 @@
           </ul>
         </nav>
         <address class="header-contacts">
-          <ul class="header-addres-list">
+          <ul class="header-addres-list list">
             <li class="header-address-card">
               <svg class="header-address-icon">
                 <use href="./img/home-page-img/home-icons.svg#icon-phone"></use>
@@ -83,10 +84,12 @@
             purus eget pellentesque integer ipsum elementum felis.
           </p>
           <div class="hero-buttons">
-            <a href="" class="hero-link">learn more about us</a>
-            <button type="button" class="hero-btn">submit request</button>
+            <a href="./about.html" class="hero-link">learn more about us</a>
+            <button type="button" class="hero-btn orange-btn">
+              submit request
+            </button>
           </div>
-          <ul class="hero-list">
+          <ul class="hero-list list">
             <li class="hero-list-item active">
               <p>01</p>
               <hr class="hero-item-hr" />
@@ -109,9 +112,7 @@
       <!-- WE ARE SECTION -->
       <section class="we-are">
         <div class="container">
-          <h2 class="we-are-title section-title">
-            We are Createx Construction Bureau
-          </h2>
+          <h2 class="section-title">We are Createx Construction Bureau</h2>
           <p class="section-text">
             We are rightfully considered to be the best construction company in
             the USA.
@@ -136,11 +137,11 @@
       <!-- OUR CORE SECTION-->
       <section class="our-core">
         <div class="container">
-          <h2 class="our-core-title section-title">Our core values</h2>
+          <h2 class="section-title section-title-margin">Our core values</h2>
           <p class="section-text">
             Our mission is to set the highest standards for construction sphere.
           </p>
-          <ul class="our-core-list">
+          <ul class="our-core-list list">
             <li class="our-core-card">
               <svg class="our-core-icons">
                 <use href="./img/home-page-img/home-icons.svg#icon-like"></use>
@@ -211,7 +212,7 @@
                   class="question-textarea"
                 ></textarea>
               </label>
-              <button type="submit" class="form-btn">Send</button>
+              <button type="submit" class="form-btn orange-btn">Send</button>
             </form>
           </div>
         </div>
@@ -219,12 +220,12 @@
       <!-- OUR SERVICES SECTION-->
       <section class="services">
         <div class="container">
-          <h2 class="services-title section-title">Our services</h2>
+          <h2 class="section-title">Our services</h2>
           <p class="section-text">
             Createx Construction Bureau is a construction giant with a full
             range of construction services.
           </p>
-          <ul class="services-list">
+          <ul class="services-list list">
             <li class="first-services-card services-card">
               <div class="services-card-info">
                 <svg class="services-icons">
@@ -268,7 +269,9 @@
           </ul>
           <div class="services-info">
             <h3 class="view-more-title">Learn more about our services</h3>
-            <a href="" class="services-link view-more-link">View services</a>
+            <a href="" class="services-link view-more-link orange-btn"
+              >View services</a
+            >
           </div>
         </div>
       </section>
@@ -296,7 +299,7 @@
               </button>
             </div>
           </div>
-          <ul class="projects-list">
+          <ul class="projects-list list">
             <li class="first-project projects-card">
               <div class="projects-card-info">
                 <h5 class="card-title">Red Finger Building</h5>
@@ -321,7 +324,9 @@
           </ul>
           <div class="projects-info">
             <h3 class="view-more-title">Explore all our works</h3>
-            <a href="" class="portfolio-link view-more-link">View portfolio</a>
+            <a href="" class="portfolio-link view-more-link orange-btn"
+              >View portfolio</a
+            >
           </div>
         </div>
       </section>
@@ -329,88 +334,58 @@
       <section class="partners">
         <div class="container">
           <h2 class="section-title">Supported by 12+ partners</h2>
-          <ul class="partners-list">
+          <ul class="partners-list list">
             <li class="partners-item">
-              <a href="" class="partners-link">
+              <a class="partners-link" href="">
                 <img
-                  src="./img/partners-img/indepth.svg"
-                  alt="InDepth Consulting logo"
-                  class="partners-icon"
-                />
-                <img
-                  src="./img/partners-img/indepth-dark.svg"
-                  alt="InDepth Consulting logo"
-                  class="partners-icon-dark"
+                  class="partners-img"
+                  src="./img/partners-img/partner-logo-1.png"
+                  alt=""
                 />
               </a>
             </li>
             <li class="partners-item">
-              <a href="" class="partners-link">
+              <a class="partners-link" href="">
                 <img
-                  src="./img/partners-img/higher-fit.svg"
-                  alt="Higher Fit logo"
-                  class="partners-icon"
-                />
-                <img
-                  src="./img/partners-img/higher-fit-dark.svg"
-                  alt="Higher Fit logo"
-                  class="partners-icon-dark"
+                  class="partners-img"
+                  src="./img/partners-img/partner-logo-2.png"
+                  alt=""
                 />
               </a>
             </li>
             <li class="partners-item">
-              <a href="" class="partners-link">
+              <a class="partners-link" href="">
                 <img
-                  src="./img/partners-img/sentinal.svg"
-                  alt="Sentinal Consulting logo"
-                  class="partners-icon"
-                />
-                <img
-                  src="./img/partners-img/sentinal-dark.svg"
-                  alt="Sentinal Consulting logo"
-                  class="partners-icon-dark"
+                  class="partners-img"
+                  src="./img/partners-img/partner-logo-3.png"
+                  alt=""
                 />
               </a>
             </li>
             <li class="partners-item">
-              <a href="" class="partners-link">
+              <a class="partners-link" href="">
                 <img
-                  src="./img/partners-img/happy-home.svg"
-                  alt="Happy Home logo"
-                  class="partners-icon"
-                />
-                <img
-                  src="./img/partners-img/happy-home-dark.svg"
-                  alt="Happy Home logo"
-                  class="partners-icon-dark"
+                  class="partners-img"
+                  src="./img/partners-img/partner-logo-4.png"
+                  alt=""
                 />
               </a>
             </li>
             <li class="partners-item">
-              <a href="" class="partners-link">
+              <a class="partners-link" href="">
                 <img
-                  src="./img/partners-img/for-sale.svg"
-                  alt="ForSale logo"
-                  class="partners-icon"
-                />
-                <img
-                  src="./img/partners-img/for-sale-dark.svg"
-                  alt="ForSale logo"
-                  class="partners-icon-dark"
+                  class="partners-img"
+                  src="./img/partners-img/partner-logo-5.png"
+                  alt=""
                 />
               </a>
             </li>
             <li class="partners-item">
-              <a href="" class="partners-link">
+              <a class="partners-link" href="">
                 <img
-                  src="./img/partners-img/sunset-realty.svg"
-                  alt="Sunset Realty logo"
-                  class="partners-icon"
-                />
-                <img
-                  src="./img/partners-img/sunset-realty-dark.svg"
-                  alt="Sunset Realty logo"
-                  class="partners-icon-dark"
+                  class="partners-img"
+                  src="./img/partners-img/partner-logo-6.png"
+                  alt=""
                 />
               </a>
             </li>
@@ -464,7 +439,7 @@
           <!-- FACTS -->
           <div class="facts">
             <h2 class="section-title">Some facts and figures</h2>
-            <ul class="facts-list">
+            <ul class="facts-list list">
               <li class="facts-card">
                 <div class="circle-progress">
                   <svg class="progress-icon">
@@ -545,7 +520,7 @@
                   </p>
                 </div>
               </div>
-              <ul class="other-news-list">
+              <ul class="other-news-list list">
                 <li class="other-news-card">
                   <img
                     src="./img/home-page-img/first-other-news.jpg"
@@ -575,7 +550,6 @@
                   <img
                     src="./img/home-page-img/second-other-news.jpg"
                     alt="Flooring materials"
-                    style="display: block"
                   />
                   <div class="other-news-content">
                     <a href="" class="card-title"
@@ -601,7 +575,9 @@
             </div>
             <div class="news-info">
               <h3 class="view-more-title">Explore all our news posts</h3>
-              <a href="" class="news-link view-more-link">view all news</a>
+              <a href="" class="news-link view-more-link orange-btn"
+                >view all news</a
+              >
             </div>
           </div>
         </div>
@@ -613,9 +589,15 @@
             <h3 class="form-title">A quick way to discuss details</h3>
             <label class="app-label">
               Name*
-              <input type="text" placeholder="Your name" class="app-input"  name="user_name"/>
+              <input
+                type="text"
+                placeholder="Your name"
+                class="app-input"
+                name="user_name"
+              />
             </label>
-            <label class="app-label">Phone*
+            <label class="app-label"
+              >Phone*
               <input
                 type="tel"
                 placeholder="Your phone number"
@@ -623,7 +605,8 @@
                 name="user_tel"
               />
             </label>
-            <label class="app-label">Email
+            <label class="app-label"
+              >Email
               <input
                 type="email"
                 placeholder="Your working email"
@@ -631,7 +614,8 @@
                 name="user_email"
               />
             </label>
-            <label class="app-label">Message*
+            <label class="app-label"
+              >Message*
               <textarea
                 name="dwd"
                 id=""
@@ -639,20 +623,41 @@
                 rows="1"
                 placeholder="Your message"
                 name="user_message"
-                class="app-textarea"></textarea>
+                class="app-textarea"
+              ></textarea>
             </label>
             <label class="checkbox-label">
               <input type="checkbox" class="app-checkbox" />
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="decor-checkbox">
-                <rect x="0.5" y="0.5" width="15" height="15" rx="2.5" fill="#FF5A30" stroke="#FF5A30" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                class="decor-checkbox"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="15"
+                  height="15"
+                  rx="2.5"
+                  fill="#FF5A30"
+                  stroke="#FF5A30"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
                   d="M12.8277 4.19526C13.0574 4.45561 13.0574 4.87772 12.8277 5.13807L6.94536 11.8047C6.71564 12.0651 6.34319 12.0651 6.11347 11.8047L3.17229 8.4714C2.94257 8.21105 2.94257 7.78894 3.17229 7.5286C3.40201 7.26825 3.77446 7.26825 4.00418 7.5286L6.52941 10.3905L11.9958 4.19526C12.2255 3.93491 12.598 3.93491 12.8277 4.19526Z"
-                  fill="white" />
+                  fill="white"
+                />
               </svg>
               I agree to receive communications from Createx Construction
               Bureau.
             </label>
-            <button type="submit" class="app-btn">send request</button>
+            <button type="submit" class="app-btn orange-btn">
+              send request
+            </button>
           </form>
         </div>
       </section>
@@ -664,14 +669,14 @@
         <div class="logo-form-container">
           <div class="footer-logo-info">
             <div class="footer-logo-box">
-              <a href="./index.html" class="logo">
+              <a href="./main.html" class="logo">
                 <svg class="footer-logo">
                   <use
                     href="./img/home-page-img/home-icons.svg#icon-logo-white"
                   ></use>
                 </svg>
               </a>
-              <ul class="footer-logo-list">
+              <ul class="footer-logo-list list">
                 <li>
                   <a href="" class="footer-sm-link">
                     <svg class="footer-sm-icon">
@@ -746,7 +751,7 @@
         <div class="footer-nav-container">
           <address class="footer-address">
             <h6 class="footer-nav-title">head office</h6>
-            <ul class="footer-address-list">
+            <ul class="footer-address-list list">
               <li class="footer-address-item">
                 Address:
                 <a href="">8502 Preston Rd. Inglewood, New York</a>
@@ -764,8 +769,10 @@
           <nav class="footer-nav">
             <div class="footer-about-nav">
               <h6 class="footer-nav-title">who we are</h6>
-              <ul class="footer-about-list">
-                <li><a href="./about.html" class="footer-about-link">About Us</a></li>
+              <ul class="footer-about-list list">
+                <li>
+                  <a href="./about.html" class="footer-about-link">About Us</a>
+                </li>
                 <li>
                   <a href="" class="footer-about-link">Available Positions</a>
                 </li>
@@ -774,7 +781,7 @@
             </div>
             <div class="footer-experiense-nav">
               <h6 class="footer-nav-title">our experience</h6>
-              <ul>
+              <ul class="list">
                 <li><a href="" class="footer-experiense-link">Services</a></li>
                 <li><a href="" class="footer-experiense-link">Work</a></li>
                 <li><a href="" class="footer-experiense-link">News</a></li>
@@ -790,7 +797,7 @@
             </svg>
             by Createx Studio
           </p>
-          <a href="index.html" class="to-top-link">
+          <a href="#header" class="to-top-link">
             go to top
             <span class="to-top-btn">
               <svg class="to-top-icon">
