@@ -159,6 +159,7 @@ header .container {
 .facts-icon{
   width: 48px;
   height: 48px;
+  fill: #9a9ca5;
 }
 /* FACTS */
 
@@ -273,6 +274,7 @@ header .container {
 .our-core-icons {
   width: 48px;
   height: 48px;
+  fill: var(--red-color);
 }
 /* OUR CORE */
 
@@ -527,6 +529,7 @@ header .container {
   max-width: 495px;
   padding: 48px 40px;
   background-color: #fff;
+  border-radius: 4px;
 }
 
 .form-title {
