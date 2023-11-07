@@ -335,7 +335,7 @@ header .container{
     resize: none;
 }
 
-.form-btn, .app-btn{
+.form-btn{
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -507,89 +507,88 @@ header .container{
     background-color: var(--red-color);
 }
 
-.projects-list{
+.works-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 80px;
 }
 
-.projects-card{
+.works-card {
     position: relative;
-    width: 390px;
     height: 440px;
-    border-radius: 4px;
+    flex-basis: calc((100% - 60px) / 3);
+    border-radius: 6px;
+    overflow: hidden;
     box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
-    background-repeat: no-repeat;
+    transition: box-shadow .25s ease-in-out .1s;
 }
 
-.projects-card-info{
+.works-card:hover,
+.works-card:focus {
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.10), 0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+}
+
+.works-card-box {
     position: absolute;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
+    z-index: 1;
     padding: 16px 0 24px;
-    max-height: 95px;
-    transition: max-height .25s ease-in-out 0.1s;
+    text-align: center;
+    background-color: #fff;
+    border-radius: none;
+    width: 100%;
+    transform: translateY(68px);
+    transition: transform .25s ease-in-out .1s;
 }
 
-.projects .card-title{
+.works-card:hover .works-card-box,
+.works-card:focus .works-card-box {
+    transform: translateY(0);
+}
+
+.works .card-title {
     margin-bottom: 4px;
 }
 
-.projects-card-text{
-    font-size: 14px;
-    line-height: 1.5;
+.works-card-text {
     color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
 }
 
-.projects-card-link {
+.works-card-link {
+    display: inline-block;
+    width: 172px;
+    height: 44px;
+    border: 1px solid var(--red-color);
+    border-radius: 4px;
+    margin-top: 24px;
+
+    color: var(--red-color);
+    text-align: center;
     font-size: 14px;
     font-weight: 700;
-    line-height: 3.14;
-    letter-spacing: 0.03em;
+    line-height: 314.3%;
+    letter-spacing: 0.036em;
     text-transform: uppercase;
-    color: var(--red-color);
-    border-radius: 4px;
-    border: none;
-    outline: 1px solid var(--red-color);
-    padding: 0 32px;
-    margin-top: 24px;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: opacity .45s ease-in-out 0.1s, 
-    transform .25s ease-in-out 0.1s;
+    transition: color .25s ease-in-out .1s,
+        background-color .25s ease-in-out .1s,
+        box-shadow .25s ease-in-out .1s;
 }
 
-.projects-card:hover .projects-card-info, .projects-card:focus .projects-card-info{
-    max-height: 100%;
-}
-
-.projects-card:hover .projects-card-link,
-.projects-card:focus .projects-card-link{
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.first-project{
-    background-image: url('../img/work-page-img/red-finger-building.jpg');
-}
-
-.second-project{
-    background-image: url('../img/work-page-img/cubes-building.jpg');
-}
-
-.third-project{
-    background-image: url('../img/work-page-img/pencil-building.jpg');
+.works-card-link:hover,
+.works-card-link:focus {
+    background-color: var(--red-color);
+    color: #fff;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.10), 0px 12px 10px -6px rgba(255, 90, 48, 0.13), 0px 26px 24px -10px rgba(255, 90, 48, 0.15), 0px 60px 80px -20px rgba(255, 90, 48, 0.21);
 }
 
 .projects-info{
     display: flex;
-    gap: 40px;
     justify-content: center;
+    gap: 40px;
+    margin-top: 85px;
 }
 /* PROJECTS */
 
@@ -836,9 +835,8 @@ header .container{
     height: 16px;
 }
 /* NEWS */
-
 /* FORM */
-.application{
+.application {
     padding: 80px 0;
     background-image: url('../img/home-page-img/app-bg.jpg');
     background-repeat: no-repeat;
@@ -847,11 +845,13 @@ header .container{
     max-width: 1920px;
     margin: 0 auto;
 }
-.application .container{
+
+.application .container {
     display: flex;
     justify-content: end;
 }
-.application-form{
+
+.application-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -861,14 +861,15 @@ header .container{
     border-radius: 4px;
 }
 
-.form-title{
+.form-title {
     font-size: 28px;
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 24px;
 }
 
-.app-label, .checkbox-label{
+.app-label,
+.checkbox-label {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -877,11 +878,12 @@ header .container{
     color: var(--primary-color);
 }
 
-.app-label:not(.checkbox-label){
+.app-label:not(.checkbox-label) {
     margin-bottom: 20px;
 }
 
-.app-input, .app-textarea{
+.app-input,
+.app-textarea {
     min-width: 415px;
     padding: 11px 16px 12px;
     border-radius: 4px;
@@ -892,17 +894,18 @@ header .container{
     color: var(--primary-color);
 }
 
-.app-input{
+.app-input {
     max-height: 44px;
 }
 
-.app-textarea{
+.app-textarea {
     padding: 11px 16px 12px;
     min-height: 66px;
     resize: none;
 }
 
-.app-input::placeholder, .app-textarea::placeholder{
+.app-input::placeholder,
+.app-textarea::placeholder {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -911,17 +914,17 @@ header .container{
 }
 
 .app-input:focus,
-.app-textarea:focus{
+.app-textarea:focus {
     background-color: none;
     outline: none;
 }
 
-.checkbox-label{
+.checkbox-label {
     position: relative;
     padding: 0 28px;
 }
 
-.app-checkbox{
+.app-checkbox {
     position: absolute;
     top: 3px;
     left: 0;
@@ -930,7 +933,7 @@ header .container{
     z-index: 1;
 }
 
-.app-checkbox:checked{
+.app-checkbox:checked {
     opacity: 0;
 }
 
@@ -944,12 +947,23 @@ header .container{
     border-radius: 4px;
 }
 
-.app-checkbox:checked+.decor-checkbox{
+.app-checkbox:checked+.decor-checkbox {
     display: block;
 }
 
-.app-btn{
+.app-btn {
+    height: 44px;
+    border: none;
+    border-radius: 4px;
     margin-top: 24px;
+    padding: 0 32px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--red-color);
 }
 
 /* FORM */
