@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreateX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/contacts.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="index.html">
+            <svg class="logo">
+              <use href="./img/icons.svg#icon-logo-black"></use>
+            </svg>
+          </a>
+          <ul class="header-nav-list list">
+            <li>
+              <a href="./about.html" class="header-nav-links"> About Us </a>
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="header-nav-links"
+              >
+                Services
+              </a>
+            </li>
+            <li><a href="./work.html" class="header-nav-links">Work</a></li>
+            <li><a href="./news.html" class="header-nav-links">News</a></li>
+            <li>
+              <a href="./contacts.html" class="header-nav-links active-nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-contacts">
+          <ul class="header-addres-list list">
+            <li class="header-address-card">
+              <svg class="header-address-icon">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+              <div class="header-address-card-info">
+                <p class="header-address-card-text">Call us</p>
+                <a href="tel:+684055550128" class="header-address-card-link"
+                  >(405) 555 0128</a
+                >
+              </div>
+            </li>
+            <li class="header-address-card">
+              <svg class="header-address-icon">
+                <use href="./img/icons.svg#icon-chat"></use>
+              </svg>
+              <div class="header-address-card-info">
+                <p class="header-address-card-text">Talk to us</p>
+                <a
+                  href="mailto:hello@createx.com"
+                  class="header-address-card-link"
+                  >hello@createx.com</a
+                >
+              </div>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <p class="page-path">
+            <span class="page-path-dark">Homepage</span> / Services
+          </p>
+          <h1 class="page-title">contacts</h1>
+          <p class="hero-text">
+            Contact us for all your construction needs. We always welcome any questions and comments.
+          </p>
+        </div>
+      </section>
+      <div class="bg-container"></div>
+      <!-- HERO -->
+      <!-- CONTACT -->
+      <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact us</h2>
+            <p class="section-text">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+            <div class="contact-wrapper">
+                <img class="contact-img" src="./img/contacts-page-img/contact-us.jpg" alt="Our client manager">
+                <form class="contact-form" action="">
+                    <div class="contact-form-wrapper">
+                      <label class="contact-label" for="contact-user-name">
+                          Name*
+                          <input class="contact-input" type="text" name="user_name" placeholder="Your name"
+                          id="contact-user-name">
+                      </label>
+                      <label class="contact-label" for="contact-user-interes">
+                          I am interested in
+                          <input class="contact-input" type="text" name="user_interes" placeholder="Interior Design"
+                          id="contact-user-interes">
+                      </label>
+                      <label class="contact-label" for="contact-user-tel">
+                          Phone*
+                          <input class="contact-input" type="tel" name="user_tel" placeholder="Your phone number"
+                          id="contact-user-tel">
+                      </label>
+                      <label class="contact-label" for="contact-user-location">
+                          Location*
+                          <input class="contact-input" type="text" name="user_location" placeholder="New York"
+                          id="contact-user-location">
+                      </label>
+                      <label class="contact-label" for="contact-user-email">
+                          Email
+                          <input class="contact-input" type="email" name="user_email" placeholder="Your working email" id="contact-user-email">
+                      </label>
+                      <div class="contact-radio-wrapper">
+                          <p class="contact-radio-title" for="">Preferred contact method</p>
+                          <ul class="contact-radio-list list">
+                              <li class="contact-radio-item">
+                                  <label for="radio-phone" class="contact-radio-label">
+                                    <input class="contact-radio" type="radio" name="contact-radio" id="radio-phone">
+                                    <svg class="decor-radio">
+                                      <use href="./img/icons.svg#icon-radio-checked"></use>
+                                    </svg>
+                                    <svg class="default-radio">
+                                      <use href="./img/icons.svg#icon-radio-default"></use>
+                                    </svg>
+                                    Phone
+                                  </label>
+                              </li>
+                              <li class="contact-radio-item">
+                                  <label for="radio-email" class="contact-radio-label">
+                                    <input class="contact-radio" type="radio" name="contact-radio" id="radio-email">
+                                    <svg class="decor-radio">
+                                      <use href="./img/icons.svg#icon-radio-checked"></use>
+                                    </svg>
+                                    <svg class="default-radio">
+                                      <use href="./img/icons.svg#icon-radio-default"></use>
+                                    </svg>
+                                    Email
+                                  </label>
+                              </li>
+                              <li class="contact-radio-item">
+                                  <label for="radio-viber" class="contact-radio-label">
+                                    <input class="contact-radio" type="radio" name="contact-radio" id="radio-viber">
+                                    <svg class="decor-radio">
+                                      <use href="./img/icons.svg#icon-radio-checked"></use>
+                                    </svg>
+                                    <svg class="default-radio">
+                                      <use href="./img/icons.svg#icon-radio-default"></use>
+                                    </svg>
+                                    Viber
+                                  </label>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                    <label class="contact-label" for="contact-user-message">
+                      Message*
+                      <textarea class="contact-textarea" name="user-message" id="contact-user-message" placeholder="Your message"></textarea>
+                    </label>
+                    <div class="checkbox-btn-wrapper">
+                      <label class="checkbox-label">
+                        <input type="checkbox" class="contact-checkbox" />
+                        <svg class="decor-checkbox">
+                          <use href="./img/icons.svg#icon-decor-checkbox"></use>
+                        </svg>
+                        I agree to receive communications from Createx Construction
+                        Bureau.
+                      </label>
+                      <button class="contact-btn orange-btn" type="submit">
+                        send request
+                      </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </section>
+  </body>
+</html>
