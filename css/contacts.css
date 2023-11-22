@@ -80,7 +80,8 @@ header .container {
 
 /* HERO */
 .hero {
-    padding: 60px 0 209px;
+    padding: 60px 0;
+    height: 508px;
 }
 
 .bg-container {
@@ -321,7 +322,7 @@ header .container {
 }
 
 .offices-item{
-    width: 250px;
+    min-width: 250px;
 }
 
 .offices-item-title{

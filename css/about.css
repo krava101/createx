@@ -79,7 +79,8 @@ header .container {
 
 /* HERO */
 .hero{
-  padding: 60px 0 179px;
+  padding: 60px 0;
+  height: 508px;
 }
 
 .bg-container{
