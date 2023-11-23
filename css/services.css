@@ -202,9 +202,7 @@ header .container {
     background-image: url('../img/home-page-img/app-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
-    max-width: 1920px;
-    margin: 0 auto;
+    background-position: center;
 }
 
 .application .container {
