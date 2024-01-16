@@ -176,12 +176,13 @@ header .container {
     margin-bottom: 20px;
 }
 
-.contact-input, .contact-textarea,
-.contact-select-list{
+.contact-input, .contact-textarea, .select-option{
+    width: 100%;
+    height: 52px;
+    padding: 13px 16px;
     border-radius: 4px;
     border: 1px solid #D7DADD;
-    background: var(--cloud);
-    padding: 13px 16px;
+    background-color: var(--cloud);
     outline: none;
     color: #424551;
 }
@@ -198,14 +199,65 @@ header .container {
     height: 52px;
 }
 
-.contact-option{
-    background-color: #D7DADD;
-}
-
 .contact-textarea{
     width: 600px;
     height: 128px;
     resize: none;
+}
+
+.contact-select-label{
+    position: relative;
+    width: 285px;
+}
+
+.contact-select-wrapper{
+    position: absolute;
+    top: 86px;
+    height: 213px;
+    width: 285px;
+    z-index: 999;
+    padding-top: 4px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.contact-select-list{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 209px;
+    width: 285px;
+
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+    background-color: var(--cloud);
+
+    transform: translateY(-150%);
+    transition: transform .8s linear;
+}
+
+.contact-select-wrapper:has(.contact-select-list-active){
+    pointer-events: all;
+}
+
+.contact-select-list-active{
+    transform: translateY(0%);
+}
+
+
+.contact-option{
+    width: 100%;
+    height: 52px;
+    padding: 13px 16px;
+    border-bottom: 1px solid #D7DADD;
+    background-color: var(--cloud);
+    outline: none;
+    color: #424551;
+    cursor: pointer;
+}
+
+.contact-option:last-child{
+    border: none;
 }
 
 /* radio */

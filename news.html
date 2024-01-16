@@ -17,8 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/news.css" />
     <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/news.css" />
   </head>
   <body>
     <header id="header">
@@ -316,7 +316,7 @@
       <section class="application">
         <div class="container">
           <form class="application-form">
-            <h3 class="form-title">A quick way to discuss details</h3>
+            <p class="form-title">A quick way to discuss details</p>
             <label class="app-label">
               Name*
               <input
@@ -324,6 +324,7 @@
                 placeholder="Your name"
                 class="app-input"
                 name="user_name"
+                required
               />
             </label>
             <label class="app-label"
@@ -333,6 +334,7 @@
                 placeholder="Your phone number"
                 class="app-input"
                 name="user_tel"
+                required
               />
             </label>
             <label class="app-label"
@@ -342,22 +344,23 @@
                 placeholder="Your working email"
                 class="app-input"
                 name="user_email"
+                required
               />
             </label>
             <label class="app-label"
               >Message*
               <textarea
-                name="dwd"
                 id=""
                 cols="1"
                 rows="1"
                 placeholder="Your message"
                 name="user_message"
                 class="app-textarea"
+                required
               ></textarea>
             </label>
             <label class="checkbox-label">
-              <input type="checkbox" class="app-checkbox" />
+              <input type="checkbox" class="app-checkbox" name="user_receive" />
               <svg class="decor-checkbox">
                 <use href="./img/icons.svg#icon-decor-checkbox"></use>
               </svg>
@@ -519,5 +522,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

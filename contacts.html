@@ -17,8 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/contacts.css" />
     <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/contacts.css" />
   </head>
   <body>
     <header id="header">
@@ -117,20 +117,26 @@
                     id="contact-user-name"
                   />
                 </label>
-                <label class="contact-label" for="contact-user-interes">
+                <label
+                  class="contact-label contact-select-label"
+                  for="contact-user-interes"
+                >
                   I am interested in
-                  <select class="contact-select-list" name="" id="">
-                    <option class="contact-option" value="1">
-                      Interior Design
-                    </option>
-                    <option class="contact-option" value="2">
-                      Construction
-                    </option>
-                    <option class="contact-option" value="3">
-                      Project Development
-                    </option>
-                    <option class="contact-option" value="4">Repairs</option>
-                  </select>
+                  <input
+                    class="select-option"
+                    type="text"
+                    placeholder="Select option"
+                    name="user_option"
+                    readonly
+                  />
+                  <div class="contact-select-wrapper">
+                    <ul class="contact-select-list list">
+                      <li class="contact-option">Interior Design</li>
+                      <li class="contact-option">Construction</li>
+                      <li class="contact-option">Project Development</li>
+                      <li class="contact-option">Repairs</li>
+                    </ul>
+                  </div>
                 </label>
                 <label class="contact-label" for="contact-user-tel">
                   Phone*
@@ -142,14 +148,25 @@
                     id="contact-user-tel"
                   />
                 </label>
-                <label class="contact-label" for="contact-user-location">
+                <label
+                  class="contact-label contact-select-label"
+                  for="contact-user-interes"
+                >
                   Location*
-                  <select class="contact-select-list" name="" id="">
-                    <option class="contact-option" value="1">New York</option>
-                    <option class="contact-option" value="2">Kyiv</option>
-                    <option class="contact-option" value="3">Berlin</option>
-                    <option class="contact-option" value="4">Toronto</option>
-                  </select>
+                  <input
+                    class="select-option"
+                    type="text"
+                    placeholder="Select option"
+                    readonly
+                  />
+                  <div class="contact-select-wrapper">
+                    <ul class="contact-select-list list">
+                      <li class="contact-option">New York</li>
+                      <li class="contact-option">Kyiv</li>
+                      <li class="contact-option">Berlin</li>
+                      <li class="contact-option">Toronto</li>
+                    </ul>
+                  </div>
                 </label>
                 <label class="contact-label" for="contact-user-email">
                   Email
@@ -549,5 +566,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="./js/contacts.js"></script>
   </body>
 </html>
